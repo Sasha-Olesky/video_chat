@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>WebRTC vanilla</title>
+
+<!-- CSS will go here -->
+<style>
+</style>
+
+</head>
+
+<body>
+
+<!-- HTML will go here -->
+
+<video id='localMedia' autoplay></video>
+<video id='remoteMedia' autoplay></video>
+<button onclick="IO.init()">connect</button>
+<button onclick="IO.sendMessage(reqSessionKey)">'create/join'</button>
+<button onclick="initLocalMedia()">'preview'</button>
+<button onclick="IO.disconnectSocket()">disconnect</button>
+
+
+<!-- JavaScript will go here -->
+<script>
+
+
+</script>
+<script src='http://ec2-52-24-49-20.us-west-2.compute.amazonaws.com:2016/socket.io/socket.io.js'></script>
+<script src='adapter.js'></script>
+<script src='main.js'></script>
+</body>
+
+</html>
+
+
+
+
